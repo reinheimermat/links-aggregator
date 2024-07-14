@@ -65,9 +65,30 @@ export default function App() {
             </LinkButton>
           </div>
           <section className="flex items-center justify-center gap-6 text-lime-300">
-            <FaGithub className="block size-6" />
-            <FaInstagram className="block size-6" />
-            <FaLinkedin className="block size-6" />
+            <a
+              href="https://github.com/reinheimermat"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-px focus:outline-zinc-50"
+            >
+              <FaGithub className="block size-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/oh_reinheimer"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-px focus:outline-zinc-50"
+            >
+              <FaInstagram className="block size-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/reinheimermat/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-px focus:outline-zinc-50"
+            >
+              <FaLinkedin className="block size-6" />
+            </a>
           </section>
         </main>
 
