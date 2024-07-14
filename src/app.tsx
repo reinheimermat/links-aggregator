@@ -6,6 +6,8 @@ import {
 } from 'react-icons/bi'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 
+import resume from './assets/cv.pdf'
+import myself from './assets/photo.png'
 import { LinkButton } from './components/link-button'
 import { TechCard } from './components/tech-card'
 
@@ -36,8 +38,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950">
       <img
-        src="./public/photo.png"
-        alt=""
+        src={myself}
+        alt="myself image"
         className="z-0 mx-auto block w-screen"
       />
 
@@ -55,7 +57,7 @@ export default function App() {
             >
               See my portfolio
             </LinkButton>
-            <LinkButton href="./public/cv.pdf" download>
+            <LinkButton href={resume} download>
               Download my resume
             </LinkButton>
             <LinkButton href="https://wa.me/5551986470952" target="_blank">
